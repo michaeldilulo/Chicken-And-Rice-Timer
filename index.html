@@ -55,10 +55,12 @@
                                 <li>Shred Chicken with 2 forks</li>
                             </ol>
                             </p>
-                            <p class="mt-3 mb-3">00 : 00</p>
-                            <button class="btn btn-lg btn-success mb-3">Timer Boil Chicken</button>
-                            <p class="mb-3">00 : 00</p>
-                            <button class="btn btn-lg btn-primary">Timer Cool off Chicken</button>
+                            <p class="mt-3 mb-3" id="chickenBoilTimer">18 : 00</p>
+                            <button class="btn btn-lg btn-success mb-3" onclick="boilChicken()">Timer Boil
+                                Chicken</button>
+                            <p class="mb-3" id="chickenCooldownTimer">10 : 00</p>
+                            <button class="btn btn-lg btn-primary" onclick="chickenCooldown();">Timer Cool off
+                                Chicken</button>
                         </div>
                     </div>
                 </div>
@@ -74,12 +76,13 @@
                                 <li>Place on Stove (no microwave)</li>
                             </ol>
                             </p>
-                            <p class="mt-3 mb-3">00 : 00</p>
-                            <button class="btn btn-lg btn-danger">High Timer Rice</button>
-                            <p class="mt-3 mb-3">00 : 00</p>
-                            <button class="btn btn-lg btn-warning">Medium Timer Rice</button>
-                            <p class="mt-3 mb-3">00 : 00</p>
-                            <button class="btn btn-lg btn-success">Timer Cool Off Rice</button>
+                            <p class="mt-3 mb-3" id="riceHighTimer">05 : 00</p>
+                            <button class="btn btn-lg btn-danger" onclick="riceHighCook()">High Cook Rice</button>
+                            <p class="mt-3 mb-3" id="riceMediumTimer">15 : 00</p>
+                            <button class="btn btn-lg btn-warning" onclick="riceMediumCook()">Medium Cook Rice</button>
+                            <p class="mt-3 mb-3" id="riceCooldownTimer">10 : 00</p>
+                            <button class="btn btn-lg btn-primary" onclick="riceCooldown();">Timer Cool Off
+                                Rice</button>
                         </div>
                     </div>
                 </div>
